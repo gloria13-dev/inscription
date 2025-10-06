@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="exo1.css">
+</head>
+<body>
+    <h2><em>Formulaire d'inscription</em></h2>
+    <em>Les champs suivis d'un astérisque (*) sont obligatoires</em><BR></BR>
+    <form action="" method="post">
+        <fieldset>
+            <legend><em>Identité</em></legend>
+            <div class="fgroup">
+                <label for="nom">Nom:<span>*</span></label>
+                <input type="text" name="nom" id="nom" required>
+            </div><br>
+            <div class="fgroup">
+                <label for="prenom">Prenom: <span>*</span></label>
+                <input type="text" name="prenom" id="prenom" required>
+            </div><br>
+            <div class="fgroup">
+                <label for="date">Date de Naissance:<span>*</span></label>
+                <input type="date" name="date" id="date" placeholder="votre genre" >
+            </div><br>
+            <div class="fgroup">
+                <label for="sexe">Genre:<span>*</span></label>
+                <select name="sexe" id="sexe" required >
+                    <option value="sexe" selected>Entrez votre sexe</option>
+                    <option value="sexe">Masculin</option>
+                    <option value="sexe">Feminin</option>
+                </select>
+            </div><br>
+            <div class="fgroup">
+                <label for="nationalité">Nationalité:<span>*</span></label>
+                <input type="text" name="nationalité" id="nationalité" placeholder="Votre Nationalité">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><em>Curcus Scolaire</em></legend>
+            <div class="fgroup">
+                <label for="serie">Série de BAC:<span>*</span></label>
+                <select name="serie" id="serie" required>
+                    <optgroup label="Moderne">
+                        <option value="A4">A4</option>
+                        <option value="B">B</option>
+                        <option value="C4">C4</option>
+                        <option value="D">D</option>
+                    </optgroup>
+                    <optgroup label="Technique">
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="E">E</option>
+                        <option value="G1">G1</option>
+                        <option value="G2">G2</option>
+                        <option value="G3">G3</option>
+                        <option value="Ti">Ti</option>
+                    </optgroup>
+                </select>
+            </div> <br>
+            <div class="fgroup">
+                <label for="filière">Filière <span>*</span></label>
+                <select name="filière" id="filière" required>
+                    <option value="ASR">ASR</option>
+                    <option value="GLSI">GLSI</option>
+                    <option value="MTWI">MTWI</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><em>Création de compte</em></legend>
+            <div class="fgroup">
+                <label for="pseudo">Pseudo <span>*</span></label>
+                <input type="text" name="pseudo" id="pseudo">
+            </div><br>
+            <div class="fgroup">
+                <label for="MDP">Mot de Passe <span>*</span></label>
+                <input type="password" name="MDP" id="MDP" required>
+            </div><br>
+            <div class="fgroup">
+                <label for="confirm">Confirmer votre Mot de passe <span>*</span></label>
+                <input type="password" name="confirm" id="confirm">
+            </div>
+        </fieldset> <br>
+        <div>
+            <button type="submit">Soumettre le Formulaire </button>
+            <button type="reset">Effacer le Formulaire</button>
+        </div>
+    </form>
+    
+</body>
+</html>
